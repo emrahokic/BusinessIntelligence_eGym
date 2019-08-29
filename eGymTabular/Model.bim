@@ -1,0 +1,861 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer localhost egym1",
+        "connectionString": "Provider=SQLNCLI11;Data Source=.;Initial Catalog=egym1;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateCurrentUser",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      },
+      {
+        "name": "SqlServer localhost egym1 2",
+        "connectionString": "Provider=SQLNCLI11;Data Source=.;Initial Catalog=egym1;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "emrah",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "adresa",
+        "columns": [
+          {
+            "name": "idAdresa",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idAdresa",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Grad_idGrad",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Grad_idGrad",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "adresa",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[adresa].* FROM [dbo].[adresa] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[adresa].* FROM [dbo].[adresa] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "adresa"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "grad",
+        "columns": [
+          {
+            "name": "idGrad",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idGrad",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "grad",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[grad].* FROM [dbo].[grad] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[grad].* FROM [dbo].[grad] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "grad"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "gym",
+        "columns": [
+          {
+            "name": "idGym",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idGym",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "GymName",
+            "dataType": "string",
+            "sourceColumn": "GymName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "GPS",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "GPS",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Activity",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Activity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Shop",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Shop",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Adresa_idAdresa",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Adresa_idAdresa",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "gym",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[gym].* FROM [dbo].[gym] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[gym].* FROM [dbo].[gym] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "gym"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "kategorija",
+        "columns": [
+          {
+            "name": "idKategorija",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idKategorija",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Opis",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Opis",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "kategorija",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[kategorija].* FROM [dbo].[kategorija] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[kategorija].* FROM [dbo].[kategorija] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "kategorija"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "kupovina",
+        "columns": [
+          {
+            "name": "idKupovina",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idKupovina",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "VrijemeKupovine",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "VrijemeKupovine",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "UkupanIznos",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "UkupanIznos",
+            "sourceProviderType": "Single"
+          },
+          {
+            "name": "Gym_idGym",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Gym_idGym",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Member_idMember",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Member_idMember",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Member_idMember_Uposlenik",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Member_idMember_Uposlenik",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "type": "calculated",
+            "name": "Godina kupovine",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR(kupovina[VrijemeKupovine])"
+          },
+          {
+            "type": "calculated",
+            "name": "Mjesec kupovine",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH(kupovina[VrijemeKupovine])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "kupovina",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[kupovina].* FROM [dbo].[kupovina] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[kupovina].* FROM [dbo].[kupovina] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "kupovina"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "kupovinastavka",
+        "columns": [
+          {
+            "name": "idKupovinaStavka",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idKupovinaStavka",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Kolicina",
+            "dataType": "int64",
+            "sourceColumn": "Kolicina",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Cijena",
+            "dataType": "double",
+            "sourceColumn": "Cijena",
+            "sourceProviderType": "Single"
+          },
+          {
+            "name": "Proizvod_idProizvod",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Proizvod_idProizvod",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Kupovina_idKupovina",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Kupovina_idKupovina",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "type": "calculated",
+            "name": "Add Column2",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "RELATED(kupovina[VrijemeKupovine])"
+          },
+          {
+            "type": "calculated",
+            "name": "Godina",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "YEAR(kupovinastavka[Add Column2])"
+          },
+          {
+            "type": "calculated",
+            "name": "Mjesec",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "MONTH(kupovinastavka[Add Column2])"
+          },
+          {
+            "type": "calculated",
+            "name": "Ukupan iznos",
+            "dataType": "double",
+            "isDataTypeInferred": true,
+            "expression": "RELATED(kupovina[UkupanIznos])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "kupovinastavka",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[kupovinastavka].* FROM [dbo].[kupovinastavka] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Ukupna zarada",
+            "expression": "SUM([Ukupan iznos])"
+          },
+          {
+            "name": "Prosjecna zarada",
+            "expression": "AVERAGE([Ukupan iznos])"
+          },
+          {
+            "name": "Maksimalan iznos",
+            "expression": "MAX([Ukupan iznos])"
+          },
+          {
+            "name": "Minimalan iznos",
+            "expression": "MIN([Ukupan iznos])"
+          },
+          {
+            "name": "Broj kupovina",
+            "expression": "COUNTA([idKupovinaStavka])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[kupovinastavka].* FROM [dbo].[kupovinastavka] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "kupovinastavka"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "member",
+        "columns": [
+          {
+            "name": "idMember",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idMember",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DateOfMembership",
+            "dataType": "dateTime",
+            "sourceColumn": "DateOfMembership",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Person_idPerson",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Person_idPerson",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Gym_idGym",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Gym_idGym",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "MemberType_idMemberType",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "MemberType_idMemberType",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "UIDH",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "UIDH",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Height",
+            "dataType": "int64",
+            "sourceColumn": "Height",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Weight",
+            "dataType": "int64",
+            "sourceColumn": "Weight",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "member",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[member].* FROM [dbo].[member] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[member].* FROM [dbo].[member] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "member"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "person",
+        "columns": [
+          {
+            "name": "idPerson",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idPerson",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "FirstName",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "FirstName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "LastName",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "LastName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "YearOfBirth",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "YearOfBirth",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "UID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "UID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Adresa_idAdresa",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Adresa_idAdresa",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Spol",
+            "dataType": "string",
+            "sourceColumn": "Spol",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "type": "calculated",
+            "name": "Starost",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "DATEDIFF(person[YearOfBirth],NOW(),YEAR)"
+          },
+          {
+            "type": "calculated",
+            "name": "Clan",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "[FirstName]&\" \"&[LastName]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "person",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[person].* FROM [dbo].[person] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[person].* FROM [dbo].[person] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "person"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "proizvod",
+        "columns": [
+          {
+            "name": "idProizvod",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idProizvod",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Opis",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Opis",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Cijena",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "Cijena",
+            "sourceProviderType": "Single"
+          },
+          {
+            "name": "Sifra",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Sifra",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Kategorija_idKategorija",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Kategorija_idKategorija",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Skladiste_idSkladiste",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Skladiste_idSkladiste",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Kolicina",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Kolicina",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "proizvod",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[proizvod].* FROM [dbo].[proizvod] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[proizvod].* FROM [dbo].[proizvod] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "proizvod"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "skladiste",
+        "columns": [
+          {
+            "name": "idSkladiste",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "idSkladiste",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Gym_idGym",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Gym_idGym",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "skladiste",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[skladiste].* FROM [dbo].[skladiste] ",
+              "dataSource": "SqlServer localhost egym1 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[skladiste].* FROM [dbo].[skladiste] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "skladiste"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "912b1cfb-ea71-4a0b-8036-21316140d685",
+        "fromTable": "adresa",
+        "fromColumn": "Grad_idGrad",
+        "toTable": "grad",
+        "toColumn": "idGrad"
+      },
+      {
+        "name": "8ea10345-9e92-496f-b84c-b78cd89b469c",
+        "fromTable": "kupovinastavka",
+        "fromColumn": "Kupovina_idKupovina",
+        "toTable": "kupovina",
+        "toColumn": "idKupovina"
+      },
+      {
+        "name": "cddb5b15-6c9a-4758-b47d-2db1586f0b37",
+        "fromTable": "kupovinastavka",
+        "fromColumn": "Proizvod_idProizvod",
+        "toTable": "proizvod",
+        "toColumn": "idProizvod"
+      },
+      {
+        "name": "bf9baf4c-a173-490f-8f6d-04a69a1ec0df",
+        "fromTable": "person",
+        "fromColumn": "Adresa_idAdresa",
+        "toTable": "adresa",
+        "toColumn": "idAdresa"
+      },
+      {
+        "name": "0e96a31b-fc8e-40d7-85c8-09808c019d94",
+        "fromTable": "proizvod",
+        "fromColumn": "Kategorija_idKategorija",
+        "toTable": "kategorija",
+        "toColumn": "idKategorija"
+      },
+      {
+        "name": "994e3bee-4d4b-410b-8cc6-57f38ff2afe7",
+        "fromTable": "skladiste",
+        "fromColumn": "Gym_idGym",
+        "toTable": "gym",
+        "toColumn": "idGym"
+      },
+      {
+        "name": "4b40da87-9084-45af-9658-5038dca69e23",
+        "fromTable": "member",
+        "fromColumn": "Gym_idGym",
+        "toTable": "gym",
+        "toColumn": "idGym",
+        "isActive": false
+      },
+      {
+        "name": "8bb21e56-5415-4d27-874c-34aae6e85b61",
+        "fromTable": "kupovina",
+        "fromColumn": "Gym_idGym",
+        "toTable": "gym",
+        "toColumn": "idGym",
+        "isActive": false
+      },
+      {
+        "name": "cbd94efe-1249-4f84-b383-3650b408df1b",
+        "fromTable": "kupovina",
+        "fromColumn": "Member_idMember",
+        "toTable": "member",
+        "toColumn": "idMember",
+        "isActive": false
+      },
+      {
+        "name": "3eaba5f5-7644-4442-9034-43e6c8f69455",
+        "fromTable": "proizvod",
+        "fromColumn": "Skladiste_idSkladiste",
+        "toTable": "skladiste",
+        "toColumn": "idSkladiste"
+      },
+      {
+        "name": "8e9acf90-f317-4b31-ab73-ea01dc147e43",
+        "fromTable": "kupovina",
+        "fromColumn": "Member_idMember_Uposlenik",
+        "toTable": "member",
+        "toColumn": "idMember"
+      },
+      {
+        "name": "c8c381b3-5228-4dd3-b8f7-2a740096cd81",
+        "fromTable": "gym",
+        "fromColumn": "Adresa_idAdresa",
+        "toTable": "adresa",
+        "toColumn": "idAdresa",
+        "isActive": false
+      },
+      {
+        "name": "2af10fac-e795-4f56-85c5-03f04e85a60c",
+        "fromTable": "member",
+        "fromColumn": "Person_idPerson",
+        "toTable": "person",
+        "toColumn": "idPerson"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

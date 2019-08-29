@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "eGymETL", "eGymETL\eGymETL.dtproj", "{EE64323A-2924-42B7-BE80-5BFF5AE5A624}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "eGymCube", "eGymCube\eGymCube.dwproj", "{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}"
+EndProject
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "eGymTabular", "eGymTabular\eGymTabular.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "eGymReports", "eGymReports\eGymReports.rptproj", "{60C792EB-1524-461E-9591-5D3240EBA556}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugLocal|x86 = DebugLocal|x86
+		Development|x86 = Development|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Debug|x86.ActiveCfg = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Debug|x86.Build.0 = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.DebugLocal|x86.ActiveCfg = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.DebugLocal|x86.Build.0 = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Development|x86.ActiveCfg = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Development|x86.Build.0 = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Release|x86.ActiveCfg = Development
+		{EE64323A-2924-42B7-BE80-5BFF5AE5A624}.Release|x86.Build.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Debug|x86.ActiveCfg = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Debug|x86.Build.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Debug|x86.Deploy.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.DebugLocal|x86.ActiveCfg = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.DebugLocal|x86.Build.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.DebugLocal|x86.Deploy.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Development|x86.ActiveCfg = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Development|x86.Build.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Development|x86.Deploy.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Release|x86.ActiveCfg = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Release|x86.Build.0 = Development
+		{04D03ECE-A9BE-470F-A7D0-F0FE96C1E851}.Release|x86.Deploy.0 = Development
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Deploy.0 = Development|x86
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Debug|x86.ActiveCfg = Debug
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Debug|x86.Build.0 = Debug
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Debug|x86.Deploy.0 = Debug
+		{60C792EB-1524-461E-9591-5D3240EBA556}.DebugLocal|x86.ActiveCfg = DebugLocal
+		{60C792EB-1524-461E-9591-5D3240EBA556}.DebugLocal|x86.Build.0 = DebugLocal
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Development|x86.ActiveCfg = DebugLocal
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Development|x86.Build.0 = DebugLocal
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Release|x86.ActiveCfg = Release
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Release|x86.Build.0 = Release
+		{60C792EB-1524-461E-9591-5D3240EBA556}.Release|x86.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CAAB88E-7BDE-4799-8039-2D507EE676D1}
+	EndGlobalSection
+EndGlobal

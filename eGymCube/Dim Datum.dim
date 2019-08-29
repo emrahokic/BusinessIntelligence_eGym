@@ -1,0 +1,293 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1b1436fc-2626-4be5-ae3f-e5c52c3084f5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Datum</ID>
+  <Name>Dim Datum</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3758" scrolltop="-6403" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12383" y="15954" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDatum" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDatum" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3758</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6403</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="112">
+            <Shape Id="Datum Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Datum Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Datum Alt Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Datum Alt Key" />
+              </Attributes>
+              <Position x="165" y="20" />
+            </Shape>
+            <Shape Id="Mjesec" Expanded="false">
+              <Attributes>
+                <Attribute Id="Mjesec" />
+              </Attributes>
+              <Position x="310" y="20" />
+            </Shape>
+            <Shape Id="Kvartal" Expanded="false">
+              <Attributes>
+                <Attribute Id="Kvartal" />
+              </Attributes>
+              <Position x="455" y="20" />
+            </Shape>
+            <Shape Id="Godina" Expanded="false">
+              <Attributes>
+                <Attribute Id="Godina" />
+              </Attributes>
+              <Position x="600" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="82a143f3-3756-4aa3-9684-f7b304de7c5d">
+    <DataSourceViewID>EgymCube</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1b979f32-a5e5-4b60-b70d-8347f314ec50">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e70e1915-cbdd-4850-87a5-f31a1f39377e">
+      <ID>Datum Key</ID>
+      <Name>Datum Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="151157bd-29e6-485f-ac85-fd3ab8fd10f2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fd1d9b6-e23d-47c5-8819-ea9c3502b19d">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>DatumKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e2398e77-74c4-4513-a842-162ab46da521">
+          <AttributeID>Datum Alt Key</AttributeID>
+          <Name>Datum Alt Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54625fe8-c7f7-4859-bd29-446655f31b21">
+      <ID>Datum Alt Key</ID>
+      <Name>Datum Alt Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e29c608-fc1d-46a0-a8ae-7d4933b3d7ee">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73ad42c8-c699-4b82-b488-41f3c71a3561">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>DatumAltKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3f76530c-dcda-4179-8769-7f2d8a73ed0c">
+          <AttributeID>Mjesec</AttributeID>
+          <Name>Mjesec</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61889da0-c887-4651-8726-67fbdfe37352">
+      <ID>Godina</ID>
+      <Name>Godina</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0eee2ca9-6049-4bb9-bb31-7dc6a1fc2858">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d3ff52d-ff64-48bc-a478-d08a30835fa9">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>Godina</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="da2360f8-28fa-43e5-8cb9-1691907edb69">
+      <ID>Kvartal</ID>
+      <Name>Kvartal</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c39ecba-9ac4-411f-b9c9-e55119b619db">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c80aae7-4be3-4f51-a17c-012837987099">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>Kvartal</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="db6c2781-07ca-4815-82ca-cc236fac4bda">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43472f5b-77d9-4460-ac90-3df6f5e9e841">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>Godina</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="695742ec-4717-4789-a0b0-4f23d4b66b81">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2c995210-fcc6-4cf5-8b46-a9c1bfe56581">
+          <TableID>dbo_DimDatum</TableID>
+          <ColumnID>Kvartal</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bf5e539a-c7af-41ee-aeb6-e0f3aa99eada">
+          <AttributeID>Godina</AttributeID>
+          <Name>Godina</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="ed4bbcf7-a1ac-4557-b663-2472a02b8a6d">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2ebba3fc-75f5-40a9-b2e4-e75fc1c626ec">
+          <TableID>dbo_DimDatum</TableID>
+          <ColumnID>Kvartal</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cb72073e-76a0-4b8d-bc50-bd6b444af3df">
+      <ID>Mjesec</ID>
+      <Name>Mjesec</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d798b54-3666-479c-8dd9-9207bd72b114">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="649ca067-059c-4b97-80fa-46ae988b22d3">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>Mjesec</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="30203317-8657-43d1-9e39-104ecdc56838">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ed3031b-d5cd-4972-9dc4-217c65376d18">
+            <TableID>dbo_DimDatum</TableID>
+            <ColumnID>Godina</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4cd58708-98ca-4bd9-993e-71ccd6193ded">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a002e39-e2ae-4b93-aa58-854b290afe89">
+          <TableID>dbo_DimDatum</TableID>
+          <ColumnID>Mjesec</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3f075e7b-6f00-4f65-93c5-237621f3b788">
+          <AttributeID>Kvartal</AttributeID>
+          <Name>Kvartal</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="c1bafff0-bfc3-43be-9b56-403951a61ce2">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bb4de723-15c4-413d-9086-e591e91b61a9">
+          <TableID>dbo_DimDatum</TableID>
+          <ColumnID>Mjesec</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e9d8721e-425a-421c-9084-dc3ec060a31a">
+      <ID>Hierarchy</ID>
+      <Name>DimDatumHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="4ae8b498-5d27-4561-b01a-389fe633c624">
+          <ID>Godina</ID>
+          <Name>Godina</Name>
+          <SourceAttributeID>Godina</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="09897651-e752-4e5b-bf77-d7100ae26249">
+          <ID>Kvartal</ID>
+          <Name>Kvartal</Name>
+          <SourceAttributeID>Kvartal</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="11446ee9-24a1-4284-82eb-fd1f957f5211">
+          <ID>Mjesec</ID>
+          <Name>Mjesec</Name>
+          <SourceAttributeID>Mjesec</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="44663333-e272-4f84-bafa-366d3069b86b">
+          <ID>Datum Alt Key</ID>
+          <Name>Datum Alt Key</Name>
+          <SourceAttributeID>Datum Alt Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

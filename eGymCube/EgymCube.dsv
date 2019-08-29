@@ -1,0 +1,198 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f77f0f8-eb47-4cb5-ba3e-6a053830ead5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>EgymCube</ID>
+  <Name>EgymCube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>EgymDW</DataSourceID>
+  <Schema>
+    <xs:schema id="EgymCube" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="EgymCube" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cc3b221b-e4e9-428b-b419-658c85253642">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimClan" msprop:design-time-name="d04623d1-44a2-49b2-81f2-2131f4b24472" msprop:DbTableName="DimClan" msprop:FriendlyName="DimClan" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ClanKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="44c6f5d1-adcc-4d73-b540-1043d85f833a" msprop:DbColumnName="ClanKey" msprop:FriendlyName="ClanKey" type="xs:int" />
+                  <xs:element name="ClanAltKey" msprop:design-time-name="308d924f-568e-45d3-857e-24b0c55fec35" msprop:DbColumnName="ClanAltKey" msprop:FriendlyName="ClanAltKey" type="xs:int" />
+                  <xs:element name="ImePrezime" msprop:design-time-name="ec350fa3-0460-4980-9bfd-ecafe58169c9" msprop:DbColumnName="ImePrezime" msprop:FriendlyName="ImePrezime">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="125" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Starost" msprop:design-time-name="ccd5e902-3f9c-4d5a-b2e8-bc609fca0e93" msprop:DbColumnName="Starost" msprop:FriendlyName="Starost" type="xs:int" />
+                  <xs:element name="Tezina" msprop:design-time-name="4ac72a1f-51d5-4db9-a3ec-d13b7145abae" msprop:DbColumnName="Tezina" msprop:FriendlyName="Tezina" type="xs:int" />
+                  <xs:element name="Visina" msprop:design-time-name="c7ea0d97-be5c-4dc5-8b77-7f302d6b5a65" msprop:DbColumnName="Visina" msprop:FriendlyName="Visina" type="xs:int" />
+                  <xs:element name="DatumUclanjivanja" msprop:design-time-name="b184346f-24fd-4429-8e35-eea885ebbfaa" msprop:DbColumnName="DatumUclanjivanja" msprop:FriendlyName="DatumUclanjivanja" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimClanarinaTip" msprop:design-time-name="2fdc77fe-22df-4950-9f04-65febf6a045f" msprop:DbTableName="DimClanarinaTip" msprop:FriendlyName="DimClanarinaTip" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ClanarinaTipKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="afeff0e2-f75c-4637-9084-2c99504b837c" msprop:DbColumnName="ClanarinaTipKey" msprop:FriendlyName="ClanarinaTipKey" type="xs:int" />
+                  <xs:element name="ClanarinaTipAltKey" msprop:design-time-name="4af96f4f-8700-4d2a-8280-b2747342fd76" msprop:DbColumnName="ClanarinaTipAltKey" msprop:FriendlyName="ClanarinaTipAltKey" type="xs:int" />
+                  <xs:element name="Naziv" msprop:design-time-name="54db3d52-54c1-427b-b07b-9ddefc521377" msprop:DbColumnName="Naziv" msprop:FriendlyName="Naziv">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimDatum" msprop:design-time-name="3f821076-5b47-42fe-89a1-37df8a39af3b" msprop:DbTableName="DimDatum" msprop:FriendlyName="DimDatum" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DatumKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cce23880-e55f-4b7b-9194-7fa983ef3ff0" msprop:DbColumnName="DatumKey" msprop:FriendlyName="DatumKey" type="xs:int" />
+                  <xs:element name="DatumAltKey" msprop:design-time-name="2766c422-be33-4762-a9c0-7552aac28ec3" msprop:DbColumnName="DatumAltKey" msprop:FriendlyName="DatumAltKey" type="xs:dateTime" />
+                  <xs:element name="Godina" msprop:design-time-name="1d5277ee-0736-4037-9dd1-2f9bedb3012c" msprop:DbColumnName="Godina" msprop:FriendlyName="Godina" type="xs:int" />
+                  <xs:element name="Kvartal" msprop:design-time-name="b48ce193-73da-4f19-8d4d-22e389af77b2" msprop:DbColumnName="Kvartal" msprop:FriendlyName="Kvartal" type="xs:int" />
+                  <xs:element name="Mjesec" msprop:design-time-name="1a8d1609-bab3-4eb5-8f71-866da2fe158b" msprop:DbColumnName="Mjesec" msprop:FriendlyName="Mjesec" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimLokacija" msprop:design-time-name="129a1f46-8180-4efc-aa8f-3d902af7a795" msprop:DbTableName="DimLokacija" msprop:FriendlyName="DimLokacija" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LokacijaKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6737e53b-5fb4-4988-93b9-279e161125f7" msprop:DbColumnName="LokacijaKey" msprop:FriendlyName="LokacijaKey" type="xs:int" />
+                  <xs:element name="LokacijaAltKey" msprop:design-time-name="d17bbc40-87d6-4f8d-826d-c9ff26af8eac" msprop:DbColumnName="LokacijaAltKey" msprop:FriendlyName="LokacijaAltKey" type="xs:int" />
+                  <xs:element name="Adresa" msprop:design-time-name="67065201-19e8-4d9a-a22d-758f2db43965" msprop:DbColumnName="Adresa" msprop:FriendlyName="Adresa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Grad" msprop:design-time-name="e303d687-07f2-4158-9532-431f7d9c7bf2" msprop:DbColumnName="Grad" msprop:FriendlyName="Grad">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimSpol" msprop:design-time-name="41e4b730-e941-4a71-a57f-2063889fdfda" msprop:DbTableName="DimSpol" msprop:FriendlyName="DimSpol" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SpolKey" msprop:design-time-name="1c855d90-2dac-4f38-9468-d791e890695e" msprop:DbColumnName="SpolKey" msprop:FriendlyName="SpolKey">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactUplate" msprop:design-time-name="6f4d4345-9be5-4646-8b34-ff1a958a0e5d" msprop:DbTableName="FactUplate" msprop:FriendlyName="FactUplate" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactUplateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4e572a94-3947-4fd1-a23e-837c61a3a6b7" msprop:DbColumnName="FactUplateID" msprop:FriendlyName="FactUplateID" type="xs:int" />
+                  <xs:element name="ClanKey" msprop:design-time-name="a7bc58fe-ba2d-423d-a864-8a706bdce5fc" msprop:DbColumnName="ClanKey" msprop:FriendlyName="ClanKey" type="xs:int" />
+                  <xs:element name="ClanarinaTipKey" msprop:design-time-name="5236f63f-a34f-4097-bc31-0eb518d5b10e" msprop:DbColumnName="ClanarinaTipKey" msprop:FriendlyName="ClanarinaTipKey" type="xs:int" />
+                  <xs:element name="DatumKey" msprop:design-time-name="e7779f9e-4bb0-41fc-98d1-7247dd4fbc29" msprop:DbColumnName="DatumKey" msprop:FriendlyName="DatumKey" type="xs:int" />
+                  <xs:element name="LokacijaKey" msprop:design-time-name="a987343f-cf89-4f3a-ba7c-87c704b91312" msprop:DbColumnName="LokacijaKey" msprop:FriendlyName="LokacijaKey" type="xs:int" />
+                  <xs:element name="SpolKey" msprop:design-time-name="7ab9937b-fc9e-403f-ac86-37c66887333d" msprop:DbColumnName="SpolKey" msprop:FriendlyName="SpolKey">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BrojUplata" msprop:design-time-name="e8b4ed70-6fb3-4ff7-b68c-6cc44edc8a72" msprop:DbColumnName="BrojUplata" msprop:FriendlyName="BrojUplata" type="xs:int" />
+                  <xs:element name="UkupnoUplaceno" msprop:design-time-name="014674d1-bfbd-4bd3-9382-8a1d27fc8c3f" msprop:DbColumnName="UkupnoUplaceno" msprop:FriendlyName="UkupnoUplaceno" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimClan" />
+          <xs:field xpath="ClanKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimClanarinaTip_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimClanarinaTip" />
+          <xs:field xpath="ClanarinaTipKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimDatum_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDatum" />
+          <xs:field xpath="DatumKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimLokacija_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimLokacija" />
+          <xs:field xpath="LokacijaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimSpol_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimSpol" />
+          <xs:field xpath="SpolKey" />
+        </xs:unique>
+        <xs:unique name="dbo_FactUplate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="FactUplateID" />
+        </xs:unique>
+        <xs:keyref name="fk_spolKey" refer="dbo_DimSpol_Constraint1">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="SpolKey" />
+        </xs:keyref>
+        <xs:keyref name="fk_dimClanarinaTip" refer="dbo_DimClanarinaTip_Constraint1">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="ClanarinaTipKey" />
+        </xs:keyref>
+        <xs:keyref name="fk_dimClan" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="ClanKey" />
+        </xs:keyref>
+        <xs:keyref name="fk_dimLokacija" refer="dbo_DimLokacija_Constraint1">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="LokacijaKey" />
+        </xs:keyref>
+        <xs:keyref name="fk_dimDatum2" refer="dbo_DimDatum_Constraint1">
+          <xs:selector xpath=".//dbo_FactUplate" />
+          <xs:field xpath="DatumKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <EgymCube xmlns="" />
+  </Schema>
+</DataSourceView>
